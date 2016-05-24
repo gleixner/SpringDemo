@@ -1,0 +1,16 @@
+When making a new database, create files with "initdb -D ./" in the directory of choice.
+create a new database with the command createdb -U postgres mydb
+
+Port that server is available on can be changed in the file C:\Program Files\PostgreSQL\9.4\data\postgresql.conf line 63
+In the same file, change listen_address from 'localhost' to '127.0.0.1'
+
+start postgres server with "pg_ctl start -l logfile -D ./"
+stop the server with "pg_ctl stop -D ./"
+
+
+-U means the string that follows it is the username.  "postgres" is the default username using the password that you setup when you install postgress.
+"mydb" is the name of the database
+
+you can access the new database with the command psql -U postgres mydb
+
+The url of a database is https://jdbc.postgresql.org/documentation/80/connect.html.  So in my case it woould be jdbc:postgresql://localhost:5432/mydb

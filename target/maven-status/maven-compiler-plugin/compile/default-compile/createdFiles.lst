@@ -1,0 +1,7 @@
+com\demo\demo\HomeController.class
+com\demo\dao\MovieDao.class
+com\demo\entities\MovieEntity.class
+com\demo\config\WebMvcConfig.class
+com\demo\config\PersistenceConfig.class
+com\demo\dtos\BasicDto.class
+com\demo\config\AppInitializer.class
